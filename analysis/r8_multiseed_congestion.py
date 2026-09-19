@@ -34,8 +34,8 @@ from congestion_cusum import (node_agg, link_epochs, build_b,
                               DELTA, TARGET_ARL, LAMBDA_STATIC, FLOOR,
                               CP_THRESH)
 
-RUNROOT = (os.path.join(GH_HYP, "integration_tests/test_manila_dalian_over_kuiper/")
-           "temp/runs")
+RUNROOT = os.path.join(GH_HYP, "integration_tests/test_manila_dalian_over_kuiper/",
+                       "temp/runs")
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                    "..", "analysis", "comparison")
 MAL = 12

@@ -27,8 +27,8 @@ import pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from cusum_detector import run_cusum, choose_h_chain, aggregate_nodes
 
-RUNROOT = (os.path.join(GH_HYP, "integration_tests/test_manila_dalian_over_kuiper/")
-           "temp/runs")
+RUNROOT = os.path.join(GH_HYP, "integration_tests/test_manila_dalian_over_kuiper/",
+                       "temp/runs")
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                    "..", "analysis", "comparison")
 MAL = 12
